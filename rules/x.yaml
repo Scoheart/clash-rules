@@ -1,0 +1,3 @@
+payload:
+  - DOMAIN-SUFFIX,x.com
+  - DOMAIN-SUFFIX,grok.com
