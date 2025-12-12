@@ -1,0 +1,38 @@
+mode: rule
+log-level: debug
+port: 7897
+
+proxies:
+  - name: USA-amazon
+    type: ss
+    server: 54.188.20.137
+    port: 8488
+    cipher: chacha20-ietf-poly1305
+    password: 8888
+    udp: false
+
+rules:
+  - RULE-SET,google,USA-amazon
+  - MATCH,DIRECT
+
+rule-providers:
+  google:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,www.youtube.com
+      - DOMAIN,www.google.com
+      - DOMAIN,googleapis.com
+  openai:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,chatgpt.com
+      - DOMAIN,openai.com
+  anthropic:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,anthropic.com
+      - DOMAIN,claude.ai
+      - DOMAIN,claude.com

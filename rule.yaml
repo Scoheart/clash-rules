@@ -1,0 +1,81 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: debug
+ipv6: false
+
+proxies:
+  - name: amazon
+    type: ss
+    server: 54.188.20.137
+    port: 8488
+    cipher: chacha20-ietf-poly1305
+    password: 8888
+    udp: false
+  - name: amazon2
+    type: ss
+    server: 54.188.20.137
+    port: 8488
+    cipher: chacha20-ietf-poly1305
+    password: 8888
+    udp: false
+
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - amazon
+      - amazon2
+
+rules:
+  - RULE-SET,openai,PROXY
+  - RULE-SET,google,PROXY
+  - RULE-SET,anthropic,PROXY
+  - RULE-SET,x,PROXY
+  - RULE-SET,docker,PROXY
+  - GEOIP,CN,DIRECT
+  - MATCH,DIRECT
+
+rule-providers:
+  openai:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Scoheart/clash-rules/refs/heads/main/rules/openai.yaml"
+    path: ./Rules/openai.yaml
+    interval: 86400
+    proxy: PROXY
+  google:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Scoheart/clash-rules/refs/heads/main/rules/google.yaml"
+    path: ./Rules/google.yaml
+    interval: 86400
+    proxy: PROXY
+  anthropic:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Scoheart/clash-rules/refs/heads/main/rules/anthropic.yaml"
+    path: ./Rules/anthropic.yaml
+    interval: 86400
+    proxy: PROXY
+  x:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Scoheart/clash-rules/refs/heads/main/rules/x.yaml"
+    path: ./Rules/x.yaml
+    interval: 86400
+    proxy: PROXY
+  github:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Scoheart/clash-rules/refs/heads/main/rules/github.yaml"
+    path: ./Rules/github.yaml
+    interval: 86400
+    proxy: PROXY
+  docker:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Scoheart/clash-rules/refs/heads/main/rules/docker.yaml"
+    path: ./Rules/docker.yaml
+    interval: 86400
+    proxy: PROXY
