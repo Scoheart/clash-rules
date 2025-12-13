@@ -33,7 +33,10 @@ rule-providers:
       - DOMAIN,www.gstatic.com
       - DOMAIN,clients4.google.com
       - DOMAIN,aistudio.google.com
-      - DOMAIN,safebrowsing.googleapis.com
+      - DOMAIN,safebrowsing.googleapis.com # Antigravity
+      - DOMAIN,signaler-pa.clients6.google.com # Antigravity
+      - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
+      - DOMAIN,mtalk.google.com # Antigravity
   github:
     type: inline
     behavior: classical
