@@ -22,11 +22,13 @@ rule-providers:
     type: inline
     behavior: classical
     payload:
-      - DOMAIN,www.youtube.com
-      - DOMAIN,www.google.com
+      - DOMAIN,www.youtube.com # YouTube
+      - DOMAIN,www.google.com # Google
       - DOMAIN,googleapis.com
       - DOMAIN,i.ytimg.com
-      - DOMAIN,gemini.google.com
+      - DOMAIN,gemini.google.com # Gemini
+      - DOMAIN,lh3.googleusercontent.com
+      - DOMAIN,www.gstatic.com
   github:
     type: inline
     behavior: classical
