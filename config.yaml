@@ -37,6 +37,8 @@ rule-providers:
       - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
       - DOMAIN,mtalk.google.com # Antigravity
       - DOMAIN,www.googleapis.com # Antigravity
+      - DOMAIN,content-autofill.googleapis.com
+      - DOMAIN,oauth2.googleapis.com
   github:
     type: inline
     behavior: classical
@@ -56,6 +58,8 @@ rule-providers:
       - DOMAIN,x.com
       - DOMAIN,api.x.com
       - DOMAIN,grok.com
+      - DOMAIN,ton.local.twitter.com
+      - DOMAIN,api.twitter.com
   other:
     type: inline
     behavior: classical
