@@ -36,7 +36,7 @@ rule-providers:
       - DOMAIN,signaler-pa.clients6.google.com # Antigravity
       - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
       - DOMAIN,mtalk.google.com # Antigravity
-      - DOMAIN,www.googleapis.com: # Antigravity
+      - DOMAIN,www.googleapis.com # Antigravity
   github:
     type: inline
     behavior: classical
