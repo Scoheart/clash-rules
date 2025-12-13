@@ -54,6 +54,7 @@ rule-providers:
     behavior: classical
     payload:
       - DOMAIN,x.com
+      - DOMAIN,api.x.com
       - DOMAIN,grok.com
   other:
     type: inline
