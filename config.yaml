@@ -13,6 +13,7 @@ proxies:
 
 rules:
   - RULE-SET,google,USA-amazon
+  - RULE-SET,github,USA-amazon
   - MATCH,DIRECT
 
 rule-providers:
