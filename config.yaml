@@ -40,6 +40,7 @@ rule-providers:
       - DOMAIN,content-autofill.googleapis.com
       - DOMAIN,oauth2.googleapis.com
       - DOMAIN,optimizationguide-pa.googleapis.com
+      - DOMAIN,accounts.google.com
   github:
     type: inline
     behavior: classical
@@ -52,6 +53,7 @@ rule-providers:
     payload:
       - DOMAIN,chatgpt.com
       - DOMAIN,ab.chatgpt.com
+      - DOMAIN,auth.openai.com
   x:
     type: inline
     behavior: classical
@@ -61,6 +63,11 @@ rule-providers:
       - DOMAIN,grok.com
       - DOMAIN,ton.local.twitter.com
       - DOMAIN,api.twitter.com
+  docker:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,hub.docker.com
   other:
     type: inline
     behavior: classical
