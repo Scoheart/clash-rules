@@ -60,3 +60,4 @@ rule-providers:
     behavior: classical
     payload:
       - DOMAIN,shadowsocks.org
+      - DOMAIN,lmarena.ai
