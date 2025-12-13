@@ -39,6 +39,7 @@ rule-providers:
       - DOMAIN,www.googleapis.com # Antigravity
       - DOMAIN,content-autofill.googleapis.com
       - DOMAIN,oauth2.googleapis.com
+      - DOMAIN,optimizationguide-pa.googleapis.com
   github:
     type: inline
     behavior: classical
