@@ -26,7 +26,6 @@ rule-providers:
     payload:
       - DOMAIN,www.youtube.com # YouTube
       - DOMAIN,www.google.com # Google
-      - DOMAIN,googleapis.com
       - DOMAIN,i.ytimg.com
       - DOMAIN,gemini.google.com # Gemini
       - DOMAIN,lh3.googleusercontent.com
@@ -37,6 +36,7 @@ rule-providers:
       - DOMAIN,signaler-pa.clients6.google.com # Antigravity
       - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
       - DOMAIN,mtalk.google.com # Antigravity
+      - DOMAIN,www.googleapis.com: # Antigravity
   github:
     type: inline
     behavior: classical
