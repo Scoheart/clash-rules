@@ -31,6 +31,8 @@ rule-providers:
       - DOMAIN,gemini.google.com # Gemini
       - DOMAIN,lh3.googleusercontent.com
       - DOMAIN,www.gstatic.com
+      - DOMAIN,clients4.google.com
+      - DOMAIN,aistudio.google.com
   github:
     type: inline
     behavior: classical
