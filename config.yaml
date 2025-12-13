@@ -29,5 +29,5 @@ rule-providers:
     type: inline
     behavior: classical
     payload:
-      - DOMAIN,www.github.com
+      - DOMAIN,github.com
       - DOMAIN,raw.githubusercontent.com
