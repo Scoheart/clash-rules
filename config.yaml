@@ -26,6 +26,7 @@ rule-providers:
       - DOMAIN,www.google.com
       - DOMAIN,googleapis.com
       - DOMAIN,i.ytimg.com
+      - DOMAIN,gemini.google.com
   github:
     type: inline
     behavior: classical
