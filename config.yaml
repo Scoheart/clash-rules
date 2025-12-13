@@ -33,6 +33,7 @@ rule-providers:
       - DOMAIN,www.gstatic.com
       - DOMAIN,clients4.google.com
       - DOMAIN,aistudio.google.com
+      - DOMAIN,safebrowsing.googleapis.com
   github:
     type: inline
     behavior: classical
