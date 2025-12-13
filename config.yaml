@@ -23,16 +23,10 @@ rule-providers:
       - DOMAIN,www.youtube.com
       - DOMAIN,www.google.com
       - DOMAIN,googleapis.com
-  openai:
+      - DOMAIN,i.ytimg.com
+  github:
     type: inline
     behavior: classical
     payload:
-      - DOMAIN,chatgpt.com
-      - DOMAIN,openai.com
-  anthropic:
-    type: inline
-    behavior: classical
-    payload:
-      - DOMAIN,anthropic.com
-      - DOMAIN,claude.ai
-      - DOMAIN,claude.com
+      - DOMAIN,www.github.com
+      - DOMAIN,raw.githubusercontent.com
