@@ -41,3 +41,14 @@ rule-providers:
     payload:
       - DOMAIN,chatgpt.com
       - DOMAIN,ab.chatgpt.com
+  x:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,x.com
+      - DOMAIN,grok.com
+  other:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,shadowsocks.org
