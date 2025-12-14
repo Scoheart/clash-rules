@@ -74,3 +74,4 @@ rule-providers:
     payload:
       - DOMAIN,shadowsocks.org
       - DOMAIN,lmarena.ai
+      - DOMAIN,axios-http.com
