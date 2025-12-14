@@ -54,6 +54,7 @@ rule-providers:
       - DOMAIN,chatgpt.com
       - DOMAIN,ab.chatgpt.com
       - DOMAIN,auth.openai.com
+      - DOMAIN,ios.chat.openai.com
   x:
     type: inline
     behavior: classical
