@@ -16,6 +16,7 @@ rules:
   - RULE-SET,github,USA-amazon
   - RULE-SET,openai,USA-amazon
   - RULE-SET,x,USA-amazon
+  - RULE-SET,claude,USA-amazon
   - RULE-SET,other,USA-amazon
   - MATCH,DIRECT
 
@@ -69,6 +70,14 @@ rule-providers:
     behavior: classical
     payload:
       - DOMAIN,hub.docker.com
+  claude:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,claude.ai
+      - DOMAIN,code.claude.com
+      - DOMAIN,docs.claude.com
+      - DOMAIN,claude.com
   other:
     type: inline
     behavior: classical
@@ -77,6 +86,3 @@ rule-providers:
       - DOMAIN,lmarena.ai
       - DOMAIN,axios-http.com
       - DOMAIN,cloud.dify.ai
-      - DOMAIN,code.claude.com
-      - DOMAIN,claude.ai
-      - DOMAIN,docs.claude.com
