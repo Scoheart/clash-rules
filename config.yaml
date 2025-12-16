@@ -89,3 +89,4 @@ rule-providers:
       - DOMAIN,lmarena.ai
       - DOMAIN,axios-http.com
       - DOMAIN,cloud.dify.ai
+      - DOMAIN,ollama.com
