@@ -42,6 +42,9 @@ rule-providers:
       - DOMAIN,oauth2.googleapis.com
       - DOMAIN,optimizationguide-pa.googleapis.com
       - DOMAIN,accounts.google.com
+      - DOMAIN-SUFFIX,youtube.com
+      - DOMAIN-SUFFIX,googlevideo.com
+
   github:
     type: inline
     behavior: classical
