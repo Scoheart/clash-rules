@@ -79,3 +79,4 @@ rule-providers:
       - DOMAIN,cloud.dify.ai
       - DOMAIN,code.claude.com
       - DOMAIN,claude.ai
+      - DOMAIN,docs.claude.com
