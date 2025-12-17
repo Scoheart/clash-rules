@@ -17,6 +17,7 @@ rules:
   - RULE-SET,openai,USA-amazon
   - RULE-SET,x,USA-amazon
   - RULE-SET,claude,USA-amazon
+  - RULE-SET,cursor,USA-amazon
   - RULE-SET,docker,USA-amazon
   - RULE-SET,other,USA-amazon
   - MATCH,DIRECT
@@ -82,6 +83,11 @@ rule-providers:
       - DOMAIN,code.claude.com
       - DOMAIN,docs.claude.com
       - DOMAIN,claude.com
+  cursor:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,api2.cursor.sh
   other:
     type: inline
     behavior: classical
