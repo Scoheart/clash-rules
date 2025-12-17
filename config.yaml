@@ -101,6 +101,8 @@ rule-providers:
       - DOMAIN,telegram.bot
       - DOMAIN,macos.telegram.org
       - DOMAIN,web.telegram.org
+      - DOMAIN,venus.web.telegram
+      - DOMAIN,kws2.web.telegram.org
   other:
     type: inline
     behavior: classical
