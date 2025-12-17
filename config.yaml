@@ -17,6 +17,7 @@ rules:
   - RULE-SET,openai,USA-amazon
   - RULE-SET,x,USA-amazon
   - RULE-SET,claude,USA-amazon
+  - RULE-SET,docker,USA-amazon
   - RULE-SET,other,USA-amazon
   - MATCH,DIRECT
 
