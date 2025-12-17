@@ -19,6 +19,7 @@ rules:
   - RULE-SET,claude,USA-amazon
   - RULE-SET,cursor,USA-amazon
   - RULE-SET,docker,USA-amazon
+  - RULE-SET,telegram,USA-amazon
   - RULE-SET,other,USA-amazon
   - MATCH,DIRECT
 
