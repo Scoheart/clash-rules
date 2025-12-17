@@ -12,51 +12,82 @@ proxies:
     udp: false
 
 rules:
-  - RULE-SET,google,USA-amazon
-  - RULE-SET,github,USA-amazon
-  - RULE-SET,openai,USA-amazon
-  - RULE-SET,x,USA-amazon
+  - RULE-SET,apple,USA-amazon
   - RULE-SET,claude,USA-amazon
   - RULE-SET,cursor,USA-amazon
   - RULE-SET,docker,USA-amazon
+  - RULE-SET,github,USA-amazon
+  - RULE-SET,google,USA-amazon
+  - RULE-SET,openai,USA-amazon
   - RULE-SET,telegram,USA-amazon
-  - RULE-SET,apple,USA-amazon
-  - RULE-SET,other,USA-amazon
+  - RULE-SET,x,USA-amazon
+  - RULE-SET,misc,USA-amazon
   - MATCH,DIRECT
 
 rule-providers:
-  google:
+  apple:
     type: inline
     behavior: classical
     payload:
-      - DOMAIN,www.youtube.com # YouTube
-      - DOMAIN,www.google.com # Google
-      - DOMAIN,i.ytimg.com
-      - DOMAIN,gemini.google.com # Gemini
-      - DOMAIN,lh3.googleusercontent.com
-      - DOMAIN,www.gstatic.com
-      - DOMAIN,clients4.google.com
-      - DOMAIN,aistudio.google.com
-      - DOMAIN,safebrowsing.googleapis.com # Antigravity
-      - DOMAIN,signaler-pa.clients6.google.com # Antigravity
-      - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
-      - DOMAIN,mtalk.google.com # Antigravity
-      - DOMAIN,www.googleapis.com # Antigravity
-      - DOMAIN,content-autofill.googleapis.com
-      - DOMAIN,oauth2.googleapis.com
-      - DOMAIN,optimizationguide-pa.googleapis.com
-      - DOMAIN,accounts.google.com
-      - DOMAIN,play.googleapis.com
-      - DOMAIN,update.googleapis.com
-      - DOMAIN,clientservices.googleapis.com
-      - DOMAIN-SUFFIX,youtube.com
-      - DOMAIN-SUFFIX,googlevideo.com
+      - DOMAIN,gs-loc-cn.apple.com
+
+  claude:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,claude.ai
+      - DOMAIN,code.claude.com
+      - DOMAIN,docs.claude.com
+      - DOMAIN,claude.com
+      - DOMAIN,api.anthropic.com
+
+  cursor:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,api2.cursor.sh
+
+  docker:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,hub.docker.com
+      - DOMAIN,auth.docker.com
+
   github:
     type: inline
     behavior: classical
     payload:
       - DOMAIN,github.com
       - DOMAIN,raw.githubusercontent.com
+
+  google:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,www.youtube.com                               # YouTube
+      - DOMAIN,www.google.com                                # Google
+      - DOMAIN,gemini.google.com                             # Gemini
+      - DOMAIN,aistudio.google.com
+      - DOMAIN,accounts.google.com
+      - DOMAIN,i.ytimg.com
+      - DOMAIN,lh3.googleusercontent.com
+      - DOMAIN,www.gstatic.com
+      - DOMAIN,clients4.google.com
+      - DOMAIN,play.googleapis.com
+      - DOMAIN,update.googleapis.com
+      - DOMAIN,clientservices.googleapis.com
+      - DOMAIN,safebrowsing.googleapis.com                   # Antigravity
+      - DOMAIN,signaler-pa.clients6.google.com               # Antigravity
+      - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com     # Antigravity
+      - DOMAIN,mtalk.google.com                              # Antigravity
+      - DOMAIN,www.googleapis.com                            # Antigravity
+      - DOMAIN,content-autofill.googleapis.com
+      - DOMAIN,oauth2.googleapis.com
+      - DOMAIN,optimizationguide-pa.googleapis.com
+      - DOMAIN-SUFFIX,youtube.com
+      - DOMAIN-SUFFIX,googlevideo.com
+
   openai:
     type: inline
     behavior: classical
@@ -67,34 +98,7 @@ rule-providers:
       - DOMAIN,ios.chat.openai.com
       - DOMAIN,realtime.chatgpt.com
       - DOMAIN,ws.chatgpt.com
-  x:
-    type: inline
-    behavior: classical
-    payload:
-      - DOMAIN,x.com
-      - DOMAIN,api.x.com
-      - DOMAIN,grok.com
-      - DOMAIN,ton.local.twitter.com
-      - DOMAIN,api.twitter.com
-  docker:
-    type: inline
-    behavior: classical
-    payload:
-      - DOMAIN,hub.docker.com
-  claude:
-    type: inline
-    behavior: classical
-    payload:
-      - DOMAIN,claude.ai
-      - DOMAIN,code.claude.com
-      - DOMAIN,docs.claude.com
-      - DOMAIN,claude.com
-      - DOMAIN,api.anthropic.com
-  cursor:
-    type: inline
-    behavior: classical
-    payload:
-      - DOMAIN,api2.cursor.sh
+
   telegram:
     type: inline
     behavior: classical
@@ -104,21 +108,27 @@ rule-providers:
       - DOMAIN,telegram.me
       - DOMAIN,telegram.dog
       - DOMAIN,telegram.bot
+      - DOMAIN,t.me
       - DOMAIN,macos.telegram.org
       - DOMAIN,web.telegram.org
       - DOMAIN,venus.web.telegram
-      - DOMAIN,kws2.web.telegram.org
       - DOMAIN,venus.web.telegram.org
+      - DOMAIN,kws2.web.telegram.org
       - DOMAIN,kws5.web.telegram.org
       - DOMAIN,flora.web.telegram.org
-      - DOMAIN,t.me
       - DOMAIN-SUFFIX,telegram.org
-  apple:
+
+  x:
     type: inline
     behavior: classical
     payload:
-      - DOMAIN,gs-loc-cn.apple.com
-  other:
+      - DOMAIN,x.com
+      - DOMAIN,api.x.com
+      - DOMAIN,grok.com
+      - DOMAIN,ton.local.twitter.com
+      - DOMAIN,api.twitter.com
+
+  misc:
     type: inline
     behavior: classical
     payload:
