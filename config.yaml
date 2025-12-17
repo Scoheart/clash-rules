@@ -99,6 +99,8 @@ rule-providers:
       - DOMAIN,telegram.me
       - DOMAIN,telegram.dog
       - DOMAIN,telegram.bot
+      - DOMAIN,macos.telegram.org
+      - DOMAIN,web.telegram.org
   other:
     type: inline
     behavior: classical
