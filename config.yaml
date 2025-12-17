@@ -103,6 +103,7 @@ rule-providers:
       - DOMAIN,web.telegram.org
       - DOMAIN,venus.web.telegram
       - DOMAIN,kws2.web.telegram.org
+      - DOMAIN,venus.web.telegram.org
       - DOMAIN,t.me
   other:
     type: inline
