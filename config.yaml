@@ -104,6 +104,8 @@ rule-providers:
       - DOMAIN,venus.web.telegram
       - DOMAIN,kws2.web.telegram.org
       - DOMAIN,venus.web.telegram.org
+      - DOMAIN,kws5.web.telegram.org
+      - DOMAIN,flora.web.telegram.org
       - DOMAIN,t.me
   other:
     type: inline
