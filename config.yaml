@@ -107,6 +107,7 @@ rule-providers:
       - DOMAIN,kws5.web.telegram.org
       - DOMAIN,flora.web.telegram.org
       - DOMAIN,t.me
+      - DOMAIN-SUFFIX,telegram.org
   other:
     type: inline
     behavior: classical
