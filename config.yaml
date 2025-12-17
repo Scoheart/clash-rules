@@ -89,6 +89,15 @@ rule-providers:
     behavior: classical
     payload:
       - DOMAIN,api2.cursor.sh
+  telegram:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,telegram.org
+      - DOMAIN,api.telegram.org
+      - DOMAIN,telegram.me
+      - DOMAIN,telegram.dog
+      - DOMAIN,telegram.bot
   other:
     type: inline
     behavior: classical
