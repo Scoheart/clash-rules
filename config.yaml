@@ -47,6 +47,12 @@ rule-providers:
       - DOMAIN,accounts.google.com
       - DOMAIN-SUFFIX,youtube.com
       - DOMAIN-SUFFIX,googlevideo.com
+      - DOMAIN,play.googleapis.com
+      - DOMAIN,play.google.com
+      - DOMAIN,waa-pa.clients6.google.com
+      - DOMAIN,ogads-pa.clients6.google.com
+      - DOMAIN,lh3.google.com
+      - DOMAIN,ogs.google.com
 
   github:
     type: inline
@@ -118,5 +124,4 @@ rule-providers:
       - DOMAIN,cloud.dify.ai
       - DOMAIN,ollama.com
       - DOMAIN,app.warp.dev
-      - DOMAIN,play.googleapis.com
       - DOMAIN,ws.chatgpt.com
