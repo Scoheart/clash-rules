@@ -55,11 +55,12 @@ rule-providers:
       - DOMAIN,api.docker.com
       - DOMAIN,auth.docker.com
       - DOMAIN,desktop.docker.com
+      - DOMAIN,dockerstatic.com
       - DOMAIN,hub.docker.com
       - DOMAIN,login.docker.com
       - DOMAIN,mcp.docker.com
+      - DOMAIN,registry-1.docker.io
       - DOMAIN,www.docker.com
-      - DOMAIN,dockerstatic.com
 
   github:
     type: inline
