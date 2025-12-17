@@ -46,13 +46,20 @@ rule-providers:
     behavior: classical
     payload:
       - DOMAIN,api2.cursor.sh
-
+ 
   docker:
     type: inline
     behavior: classical
     payload:
-      - DOMAIN,hub.docker.com
+      - DOMAIN,ai-backend-service.docker.com
+      - DOMAIN,api.docker.com
       - DOMAIN,auth.docker.com
+      - DOMAIN,desktop.docker.com
+      - DOMAIN,hub.docker.com
+      - DOMAIN,login.docker.com
+      - DOMAIN,mcp.docker.com
+      - DOMAIN,www.docker.com
+      - DOMAIN,dockerstatic.com
 
   github:
     type: inline
