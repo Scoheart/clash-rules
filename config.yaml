@@ -15,6 +15,7 @@ rules:
   - RULE-SET,apple,USA-amazon
   - RULE-SET,claude,USA-amazon
   - RULE-SET,cursor,USA-amazon
+  - RULE-SET,discord,USA-amazon
   - RULE-SET,docker,USA-amazon
   - RULE-SET,github,USA-amazon
   - RULE-SET,google,USA-amazon
@@ -46,7 +47,15 @@ rule-providers:
     behavior: classical
     payload:
       - DOMAIN,api2.cursor.sh
- 
+
+  discord:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,discord.com
+      - DOMAIN,discord.gg
+      - DOMAIN-SUFFIX,discord.com
+
   docker:
     type: inline
     behavior: classical
