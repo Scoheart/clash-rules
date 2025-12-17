@@ -45,9 +45,9 @@ rule-providers:
       - DOMAIN,oauth2.googleapis.com
       - DOMAIN,optimizationguide-pa.googleapis.com
       - DOMAIN,accounts.google.com
+      - DOMAIN,play.googleapis.com
       - DOMAIN-SUFFIX,youtube.com
       - DOMAIN-SUFFIX,googlevideo.com
-
   github:
     type: inline
     behavior: classical
@@ -62,6 +62,8 @@ rule-providers:
       - DOMAIN,ab.chatgpt.com
       - DOMAIN,auth.openai.com
       - DOMAIN,ios.chat.openai.com
+      - DOMAIN,realtime.chatgpt.com
+      - DOMAIN,ws.chatgpt.com
   x:
     type: inline
     behavior: classical
@@ -118,5 +120,3 @@ rule-providers:
       - DOMAIN,cloud.dify.ai
       - DOMAIN,ollama.com
       - DOMAIN,app.warp.dev
-      - DOMAIN,play.googleapis.com
-      - DOMAIN,ws.chatgpt.com
