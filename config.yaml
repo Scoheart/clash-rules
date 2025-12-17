@@ -12,76 +12,26 @@ proxies:
     udp: false
 
 rules:
-  - RULE-SET,google,USA-amazon
-  - RULE-SET,github,USA-amazon
-  - RULE-SET,openai,USA-amazon
-  - RULE-SET,x,USA-amazon
+  - RULE-SET,apple,USA-amazon
   - RULE-SET,claude,USA-amazon
   - RULE-SET,cursor,USA-amazon
+  - RULE-SET,discord,USA-amazon
   - RULE-SET,docker,USA-amazon
+  - RULE-SET,github,USA-amazon
+  - RULE-SET,google,USA-amazon
+  - RULE-SET,openai,USA-amazon
   - RULE-SET,telegram,USA-amazon
-  - RULE-SET,other,USA-amazon
+  - RULE-SET,x,USA-amazon
+  - RULE-SET,misc,USA-amazon
   - MATCH,DIRECT
 
 rule-providers:
-  google:
+  apple:
     type: inline
     behavior: classical
     payload:
-      - DOMAIN,www.youtube.com # YouTube
-      - DOMAIN,www.google.com # Google
-      - DOMAIN,i.ytimg.com
-      - DOMAIN,gemini.google.com # Gemini
-      - DOMAIN,lh3.googleusercontent.com
-      - DOMAIN,www.gstatic.com
-      - DOMAIN,clients4.google.com
-      - DOMAIN,aistudio.google.com
-      - DOMAIN,safebrowsing.googleapis.com # Antigravity
-      - DOMAIN,signaler-pa.clients6.google.com # Antigravity
-      - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
-      - DOMAIN,mtalk.google.com # Antigravity
-      - DOMAIN,www.googleapis.com # Antigravity
-      - DOMAIN,content-autofill.googleapis.com
-      - DOMAIN,oauth2.googleapis.com
-      - DOMAIN,optimizationguide-pa.googleapis.com
-      - DOMAIN,accounts.google.com
-      - DOMAIN-SUFFIX,youtube.com
-      - DOMAIN-SUFFIX,googlevideo.com
-      - DOMAIN,play.googleapis.com
-      - DOMAIN,play.google.com
-      - DOMAIN,waa-pa.clients6.google.com
-      - DOMAIN,ogads-pa.clients6.google.com
-      - DOMAIN,lh3.google.com
-      - DOMAIN,ogs.google.com
+      - DOMAIN,gs-loc-cn.apple.com
 
-  github:
-    type: inline
-    behavior: classical
-    payload:
-      - DOMAIN,github.com
-      - DOMAIN,raw.githubusercontent.com
-  openai:
-    type: inline
-    behavior: classical
-    payload:
-      - DOMAIN,chatgpt.com
-      - DOMAIN,ab.chatgpt.com
-      - DOMAIN,auth.openai.com
-      - DOMAIN,ios.chat.openai.com
-  x:
-    type: inline
-    behavior: classical
-    payload:
-      - DOMAIN,x.com
-      - DOMAIN,api.x.com
-      - DOMAIN,grok.com
-      - DOMAIN,ton.local.twitter.com
-      - DOMAIN,api.twitter.com
-  docker:
-    type: inline
-    behavior: classical
-    payload:
-      - DOMAIN,hub.docker.com
   claude:
     type: inline
     behavior: classical
@@ -91,11 +41,89 @@ rule-providers:
       - DOMAIN,docs.claude.com
       - DOMAIN,claude.com
       - DOMAIN,api.anthropic.com
+
   cursor:
     type: inline
     behavior: classical
     payload:
       - DOMAIN,api2.cursor.sh
+
+  discord:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,discord.com
+      - DOMAIN,discord.gg
+      - DOMAIN-SUFFIX,discord.com
+
+  docker:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,ai-backend-service.docker.com
+      - DOMAIN,api.docker.com
+      - DOMAIN,auth.docker.com
+      - DOMAIN,auth.docker.io
+      - DOMAIN,desktop.docker.com
+      - DOMAIN,dockerstatic.com
+      - DOMAIN,hub.docker.com
+      - DOMAIN,login.docker.com
+      - DOMAIN,mcp.docker.com
+      - DOMAIN,production.cloudflare.docker.com
+      - DOMAIN,registry-1.docker.io
+      - DOMAIN,www.docker.com
+
+  github:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,github.com
+      - DOMAIN,raw.githubusercontent.com
+
+  google:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,www.youtube.com                               # YouTube
+      - DOMAIN,www.google.com                                # Google
+      - DOMAIN,gemini.google.com                             # Gemini
+      - DOMAIN,aistudio.google.com
+      - DOMAIN,accounts.google.com
+      - DOMAIN,i.ytimg.com
+      - DOMAIN,lh3.googleusercontent.com
+      - DOMAIN,www.gstatic.com
+      - DOMAIN,clients4.google.com
+      - DOMAIN,play.googleapis.com
+      - DOMAIN,update.googleapis.com
+      - DOMAIN,clientservices.googleapis.com
+      - DOMAIN,safebrowsing.googleapis.com                   # Antigravity
+      - DOMAIN,signaler-pa.clients6.google.com               # Antigravity
+      - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com     # Antigravity
+      - DOMAIN,mtalk.google.com                              # Antigravity
+      - DOMAIN,www.googleapis.com                            # Antigravity
+      - DOMAIN,content-autofill.googleapis.com
+      - DOMAIN,oauth2.googleapis.com
+      - DOMAIN,optimizationguide-pa.googleapis.com
+      - DOMAIN-SUFFIX,youtube.com
+      - DOMAIN-SUFFIX,googlevideo.com
+      - DOMAIN,play.googleapis.com
+      - DOMAIN,play.google.com
+      - DOMAIN,waa-pa.clients6.google.com
+      - DOMAIN,ogads-pa.clients6.google.com
+      - DOMAIN,lh3.google.com
+      - DOMAIN,ogs.google.com
+
+  openai:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,chatgpt.com
+      - DOMAIN,ab.chatgpt.com
+      - DOMAIN,auth.openai.com
+      - DOMAIN,ios.chat.openai.com
+      - DOMAIN,realtime.chatgpt.com
+      - DOMAIN,ws.chatgpt.com
+
   telegram:
     type: inline
     behavior: classical
@@ -105,23 +133,36 @@ rule-providers:
       - DOMAIN,telegram.me
       - DOMAIN,telegram.dog
       - DOMAIN,telegram.bot
+      - DOMAIN,t.me
       - DOMAIN,macos.telegram.org
       - DOMAIN,web.telegram.org
       - DOMAIN,venus.web.telegram
-      - DOMAIN,kws2.web.telegram.org
       - DOMAIN,venus.web.telegram.org
+      - DOMAIN,kws2.web.telegram.org
       - DOMAIN,kws5.web.telegram.org
       - DOMAIN,flora.web.telegram.org
-      - DOMAIN,t.me
       - DOMAIN-SUFFIX,telegram.org
-  other:
+
+  x:
     type: inline
     behavior: classical
     payload:
-      - DOMAIN,shadowsocks.org
-      - DOMAIN,lmarena.ai
+      - DOMAIN,x.com
+      - DOMAIN,api.x.com
+      - DOMAIN,grok.com
+      - DOMAIN,ton.local.twitter.com
+      - DOMAIN,api.twitter.com
+
+  misc:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,app.warp.dev
       - DOMAIN,axios-http.com
       - DOMAIN,cloud.dify.ai
+      - DOMAIN,lmarena.ai
       - DOMAIN,ollama.com
       - DOMAIN,app.warp.dev
-      - DOMAIN,ws.chatgpt.com
+      - DOMAIN,registry.npmjs.org
+      - DOMAIN,shadowsocks.org
+      - DOMAIN,www.gravatar.com
