@@ -60,6 +60,7 @@ rule-providers:
       - DOMAIN,hub.docker.com
       - DOMAIN,login.docker.com
       - DOMAIN,mcp.docker.com
+      - DOMAIN,production.cloudflare.docker.com
       - DOMAIN,registry-1.docker.io
       - DOMAIN,www.docker.com
 
