@@ -97,3 +97,4 @@ rule-providers:
       - DOMAIN,axios-http.com
       - DOMAIN,cloud.dify.ai
       - DOMAIN,ollama.com
+      - DOMAIN,app.warp.dev
