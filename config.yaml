@@ -83,6 +83,7 @@ rule-providers:
       - DOMAIN,code.claude.com
       - DOMAIN,docs.claude.com
       - DOMAIN,claude.com
+      - DOMAIN,api.anthropic.com
   cursor:
     type: inline
     behavior: classical
