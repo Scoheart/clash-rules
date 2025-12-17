@@ -54,6 +54,7 @@ rule-providers:
       - DOMAIN,ai-backend-service.docker.com
       - DOMAIN,api.docker.com
       - DOMAIN,auth.docker.com
+      - DOMAIN,auth.docker.io
       - DOMAIN,desktop.docker.com
       - DOMAIN,dockerstatic.com
       - DOMAIN,hub.docker.com
@@ -140,10 +141,11 @@ rule-providers:
     type: inline
     behavior: classical
     payload:
-      - DOMAIN,shadowsocks.org
-      - DOMAIN,lmarena.ai
+      - DOMAIN,app.warp.dev
       - DOMAIN,axios-http.com
       - DOMAIN,cloud.dify.ai
+      - DOMAIN,lmarena.ai
       - DOMAIN,ollama.com
-      - DOMAIN,app.warp.dev
+      - DOMAIN,registry.npmjs.org
+      - DOMAIN,shadowsocks.org
       - DOMAIN,www.gravatar.com
