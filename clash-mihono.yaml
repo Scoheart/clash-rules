@@ -84,9 +84,9 @@ rule-providers:
     type: inline
     behavior: classical
     payload:
-      - DOMAIN,www.youtube.com                               # YouTube
-      - DOMAIN,www.google.com                                # Google
-      - DOMAIN,gemini.google.com                             # Gemini
+      - DOMAIN,www.youtube.com # YouTube
+      - DOMAIN,www.google.com # Google
+      - DOMAIN,gemini.google.com # Gemini
       - DOMAIN,aistudio.google.com
       - DOMAIN,accounts.google.com
       - DOMAIN,i.ytimg.com
@@ -96,11 +96,13 @@ rule-providers:
       - DOMAIN,play.googleapis.com
       - DOMAIN,update.googleapis.com
       - DOMAIN,clientservices.googleapis.com
-      - DOMAIN,safebrowsing.googleapis.com                   # Antigravity
-      - DOMAIN,signaler-pa.clients6.google.com               # Antigravity
-      - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com     # Antigravity
-      - DOMAIN,mtalk.google.com                              # Antigravity
-      - DOMAIN,www.googleapis.com                            # Antigravity
+      - DOMAIN,safebrowsing.googleapis.com # Antigravity
+      - DOMAIN,signaler-pa.clients6.google.com # Antigravity
+      - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
+      - DOMAIN,cloudcode-pa.googleapis.com
+      - DOMAIN,alkalimakersuite-pa.clients6.google.com
+      - DOMAIN,mtalk.google.com # Antigravity
+      - DOMAIN,www.googleapis.com # Antigravity
       - DOMAIN,content-autofill.googleapis.com
       - DOMAIN,oauth2.googleapis.com
       - DOMAIN,optimizationguide-pa.googleapis.com
@@ -168,3 +170,4 @@ rule-providers:
       - DOMAIN,huggingface.co
       - DOMAIN,m.stripe.com
       - DOMAIN,cdn-avatars.huggingface.co
+      - DOMAIN,mcp.context7.com
