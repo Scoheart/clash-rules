@@ -133,6 +133,7 @@ rule-providers:
       - DOMAIN,ios.chat.openai.com
       - DOMAIN,realtime.chatgpt.com
       - DOMAIN,ws.chatgpt.com
+      - DOMAIN,platform.openai.com
 
   telegram:
     type: inline
