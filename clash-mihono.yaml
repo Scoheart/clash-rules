@@ -27,6 +27,7 @@ rule-providers:
       - DOMAIN,claude.com
       - DOMAIN,code.claude.com
       - DOMAIN,docs.claude.com
+      - DOMAIN,platform.claude.com
 
   cursor:
     type: inline
@@ -127,6 +128,7 @@ rule-providers:
       - DOMAIN,abtestvm.bytedance.com
       - DOMAIN,bnpm.byted.org
       - DOMAIN,iac.byted.org
+      - DOMAIN-SUFFIX,intellimizeio.com
 
   openai:
     type: inline 
@@ -138,6 +140,7 @@ rule-providers:
       - DOMAIN,ios.chat.openai.com
       - DOMAIN,realtime.chatgpt.com
       - DOMAIN,ws.chatgpt.com
+      - DOMAIN,platform.openai.com
 
   telegram:
     type: inline
