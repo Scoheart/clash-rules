@@ -123,6 +123,7 @@ rule-providers:
       - DOMAIN,registry.npmjs.org
       - DOMAIN,shadowsocks.org
       - DOMAIN,www.gravatar.com
+      - DOMAIN-SUFFIX,intellimizeio.com
 
   openai:
     type: inline
