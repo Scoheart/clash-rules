@@ -27,6 +27,7 @@ rule-providers:
       - DOMAIN,claude.com
       - DOMAIN,code.claude.com
       - DOMAIN,docs.claude.com
+      - DOMAIN,platform.claude.com
 
   cursor:
     type: inline
