@@ -1,0 +1,183 @@
+mode: rule
+log-level: debug
+port: 7897
+
+proxies:
+  - name: USA-amazon
+    type: ss
+    server: 54.188.20.137
+    port: 8488
+    cipher: chacha20-ietf-poly1305
+    password: 8888
+    udp: false
+
+rule-providers:
+  apple:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,gs-loc-cn.apple.com
+
+  claude:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,api.anthropic.com
+      - DOMAIN,claude.ai
+      - DOMAIN,claude.com
+      - DOMAIN,code.claude.com
+      - DOMAIN,docs.claude.com
+
+  cursor:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,api2.cursor.sh
+
+  discord:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,discord.com
+      - DOMAIN,discord.gg
+      - DOMAIN-SUFFIX,discord.com
+
+  docker:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,ai-backend-service.docker.com
+      - DOMAIN,api.docker.com
+      - DOMAIN,auth.docker.com
+      - DOMAIN,auth.docker.io
+      - DOMAIN,desktop.docker.com
+      - DOMAIN,dockerstatic.com
+      - DOMAIN,hub.docker.com
+      - DOMAIN,login.docker.com
+      - DOMAIN,mcp.docker.com
+      - DOMAIN,production.cloudflare.docker.com
+      - DOMAIN,registry-1.docker.io
+      - DOMAIN,www.docker.com
+
+  github:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,github.com
+      - DOMAIN,raw.githubusercontent.com
+
+  google:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,accounts.google.com
+      - DOMAIN,aistudio.google.com
+      - DOMAIN,alkalimakersuite-pa.clients6.google.com
+      - DOMAIN,android.clients.google.com
+      - DOMAIN,clientservices.googleapis.com
+      - DOMAIN,clients1.google.com
+      - DOMAIN,clients4.google.com
+      - DOMAIN,cloudcode-pa.googleapis.com
+      - DOMAIN,content-autofill.googleapis.com
+      - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
+      - DOMAIN,firebaselogging-pa.googleapis.com
+      - DOMAIN,gemini.google.com # Gemini
+      - DOMAIN-SUFFIX,googleusercontent.com
+      - DOMAIN-SUFFIX,googlevideo.com
+      - DOMAIN-SUFFIX,gstatic.com
+      - DOMAIN,i.ytimg.com
+      - DOMAIN,lh3.google.com
+      - DOMAIN,lh3.googleusercontent.com
+      - DOMAIN,mtalk.google.com # Antigravity
+      - DOMAIN,oauth2.googleapis.com
+      - DOMAIN,ogads-pa.clients6.google.com
+      - DOMAIN,ogs.google.com
+      - DOMAIN,optimizationguide-pa.googleapis.com
+      - DOMAIN,play.googleapis.com
+      - DOMAIN,play.google.com
+      - DOMAIN,safebrowsing.google.com
+      - DOMAIN,safebrowsing.googleapis.com # Antigravity
+      - DOMAIN,signaler-pa.clients6.google.com # Antigravity
+      - DOMAIN,update.googleapis.com
+      - DOMAIN,waa-pa.clients6.google.com
+      - DOMAIN,www.googleapis.com # Antigravity
+      - DOMAIN,www.google.com # Google
+      - DOMAIN,www.gstatic.com
+      - DOMAIN,www.youtube.com # YouTube
+      - DOMAIN-SUFFIX,youtube.com
+      - DOMAIN,chromemodelexecution-pa.googleapis.com
+      - DOMAIN,apis.google.com
+
+  misc:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,app.warp.dev
+      - DOMAIN,axios-http.com
+      - DOMAIN,cdn-avatars.huggingface.co
+      - DOMAIN,cloud.dify.ai
+      - DOMAIN,huggingface.co
+      - DOMAIN,lmarena.ai
+      - DOMAIN,m.stripe.com
+      - DOMAIN,mcp.context7.com
+      - DOMAIN,ollama.com
+      - DOMAIN,registry.npmjs.org
+      - DOMAIN,shadowsocks.org
+      - DOMAIN,www.gravatar.com
+      - DOMAIN,abtestvm.bytedance.com
+      - DOMAIN,bnpm.byted.org
+      - DOMAIN,iac.byted.org
+
+  openai:
+    type: inline 
+    behavior: classical
+    payload:
+      - DOMAIN,ab.chatgpt.com
+      - DOMAIN,auth.openai.com
+      - DOMAIN,chatgpt.com
+      - DOMAIN,ios.chat.openai.com
+      - DOMAIN,realtime.chatgpt.com
+      - DOMAIN,ws.chatgpt.com
+
+  telegram:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,api.telegram.org
+      - DOMAIN,flora.web.telegram.org
+      - DOMAIN,kws2.web.telegram.org
+      - DOMAIN,kws5.web.telegram.org
+      - DOMAIN,macos.telegram.org
+      - DOMAIN,t.me
+      - DOMAIN,telegram.bot
+      - DOMAIN,telegram.dog
+      - DOMAIN,telegram.me
+      - DOMAIN,telegram.org
+      - DOMAIN,venus.web.telegram
+      - DOMAIN,venus.web.telegram.org
+      - DOMAIN,web.telegram.org
+      - DOMAIN-SUFFIX,telegram.org
+
+  x:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,api.twitter.com
+      - DOMAIN,api.x.com
+      - DOMAIN,grok.com
+      - DOMAIN,ton.local.twitter.com
+      - DOMAIN,x.com
+
+rules:
+  - RULE-SET,apple,USA-amazon
+  - RULE-SET,claude,USA-amazon
+  - RULE-SET,cursor,USA-amazon
+  - RULE-SET,discord,USA-amazon
+  - RULE-SET,docker,USA-amazon
+  - RULE-SET,github,USA-amazon
+  - RULE-SET,google,USA-amazon
+  - RULE-SET,misc,USA-amazon
+  - RULE-SET,openai,USA-amazon
+  - RULE-SET,telegram,USA-amazon
+  - RULE-SET,x,USA-amazon
+  - MATCH,DIRECT
