@@ -125,6 +125,7 @@ rule-providers:
       - DOMAIN,registry.npmjs.org
       - DOMAIN,shadowsocks.org
       - DOMAIN,www.gravatar.com
+      - DOMAIN,developer.mozilla.org
       - DOMAIN-SUFFIX,intellimizeio.com
 
   openai:
