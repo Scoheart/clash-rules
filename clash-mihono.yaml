@@ -135,6 +135,7 @@ rule-providers:
       - DOMAIN,developer.mozilla.org
       - DOMAIN,www.typescriptlang.org
       - DOMAIN,babeljs.io
+      - DOMAIN,anyrouter.top
       - DOMAIN-SUFFIX,intellimizeio.com
 
   openai:
