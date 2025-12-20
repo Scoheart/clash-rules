@@ -126,6 +126,7 @@ rule-providers:
       - DOMAIN,shadowsocks.org
       - DOMAIN,www.gravatar.com
       - DOMAIN,developer.mozilla.org
+      - DOMAIN,www.typescriptlang.org
       - DOMAIN-SUFFIX,intellimizeio.com
 
   openai:
