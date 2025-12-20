@@ -17,6 +17,7 @@ rule-providers:
     behavior: classical
     payload:
       - DOMAIN,gs-loc-cn.apple.com
+      - DOMAIN,token.safebrowsing.apple
 
   claude:
     type: inline
@@ -75,9 +76,12 @@ rule-providers:
       - DOMAIN,aistudio.google.com
       - DOMAIN,alkalimakersuite-pa.clients6.google.com
       - DOMAIN,android.clients.google.com
+      - DOMAIN,calendar.google.com
       - DOMAIN,clients1.google.com
+      - DOMAIN,clients2.google.com
       - DOMAIN,clients4.google.com
       - DOMAIN,clientservices.googleapis.com
+      - DOMAIN,chromemodelexecution-pa.googleapis.com
       - DOMAIN,cloudcode-pa.googleapis.com
       - DOMAIN,content-autofill.googleapis.com
       - DOMAIN,daily-cloudcode-pa.googleapis.com
@@ -89,6 +93,8 @@ rule-providers:
       - DOMAIN,lh3.google.com
       - DOMAIN,lh3.googleusercontent.com
       - DOMAIN,mtalk.google.com # Antigravity
+      - DOMAIN,mail.google.com
+      - DOMAIN,memex-pa.googleapis.com
       - DOMAIN,oauth2.googleapis.com
       - DOMAIN,ogads-pa.clients6.google.com
       - DOMAIN,ogs.google.com
@@ -98,6 +104,7 @@ rule-providers:
       - DOMAIN,safebrowsing.google.com
       - DOMAIN,safebrowsing.googleapis.com # Antigravity
       - DOMAIN,signaler-pa.clients6.google.com # Antigravity
+      - DOMAIN,translate.google.com
       - DOMAIN,update.googleapis.com
       - DOMAIN,waa-pa.clients6.google.com
       - DOMAIN,www.google.com # Google
