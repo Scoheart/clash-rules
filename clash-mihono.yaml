@@ -105,6 +105,7 @@ rule-providers:
       - DOMAIN,www.google.com # Google
       - DOMAIN,www.gstatic.com
       - DOMAIN,www.youtube.com # YouTube
+      - DOMAIN,jnn-pa.googleapis.com
       - DOMAIN-SUFFIX,youtube.com
 
   misc:
