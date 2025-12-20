@@ -75,18 +75,17 @@ rule-providers:
       - DOMAIN,aistudio.google.com
       - DOMAIN,alkalimakersuite-pa.clients6.google.com
       - DOMAIN,android.clients.google.com
-      - DOMAIN,clientservices.googleapis.com
       - DOMAIN,clients1.google.com
       - DOMAIN,clients4.google.com
+      - DOMAIN,clientservices.googleapis.com
       - DOMAIN,cloudcode-pa.googleapis.com
       - DOMAIN,content-autofill.googleapis.com
+      - DOMAIN,daily-cloudcode-pa.googleapis.com
       - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
       - DOMAIN,firebaselogging-pa.googleapis.com
       - DOMAIN,gemini.google.com # Gemini
-      - DOMAIN-SUFFIX,googleusercontent.com
-      - DOMAIN-SUFFIX,googlevideo.com
-      - DOMAIN-SUFFIX,gstatic.com
       - DOMAIN,i.ytimg.com
+      - DOMAIN,jnn-pa.googleapis.com
       - DOMAIN,lh3.google.com
       - DOMAIN,lh3.googleusercontent.com
       - DOMAIN,mtalk.google.com # Antigravity
@@ -94,18 +93,20 @@ rule-providers:
       - DOMAIN,ogads-pa.clients6.google.com
       - DOMAIN,ogs.google.com
       - DOMAIN,optimizationguide-pa.googleapis.com
-      - DOMAIN,play.googleapis.com
       - DOMAIN,play.google.com
+      - DOMAIN,play.googleapis.com
       - DOMAIN,safebrowsing.google.com
       - DOMAIN,safebrowsing.googleapis.com # Antigravity
       - DOMAIN,signaler-pa.clients6.google.com # Antigravity
       - DOMAIN,update.googleapis.com
       - DOMAIN,waa-pa.clients6.google.com
-      - DOMAIN,www.googleapis.com # Antigravity
       - DOMAIN,www.google.com # Google
+      - DOMAIN,www.googleapis.com # Antigravity
       - DOMAIN,www.gstatic.com
       - DOMAIN,www.youtube.com # YouTube
-      - DOMAIN,jnn-pa.googleapis.com
+      - DOMAIN-SUFFIX,googleusercontent.com
+      - DOMAIN-SUFFIX,googlevideo.com
+      - DOMAIN-SUFFIX,gstatic.com
       - DOMAIN-SUFFIX,youtube.com
 
   misc:
@@ -134,9 +135,9 @@ rule-providers:
       - DOMAIN,auth.openai.com
       - DOMAIN,chatgpt.com
       - DOMAIN,ios.chat.openai.com
+      - DOMAIN,platform.openai.com
       - DOMAIN,realtime.chatgpt.com
       - DOMAIN,ws.chatgpt.com
-      - DOMAIN,platform.openai.com
 
   telegram:
     type: inline
