@@ -92,6 +92,7 @@ rule-providers:
       - DOMAIN,gemini.google.com # Gemini
       - DOMAIN,i.ytimg.com
       - DOMAIN,identitytoolkit.googleapis.com
+      - DOMAIN,yt3.ggpht.com # YouTube 头像/频道图标 CDN（Google ggpht）
       - DOMAIN,jnn-pa.googleapis.com
       - DOMAIN,lh3.google.com
       - DOMAIN,lh3.googleusercontent.com
