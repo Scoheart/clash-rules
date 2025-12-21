@@ -92,6 +92,7 @@ rule-providers:
       - DOMAIN,gemini.google.com # Gemini
       - DOMAIN,i.ytimg.com
       - DOMAIN,identitytoolkit.googleapis.com
+      - DOMAIN,securetoken.googleapis.com # Google/Firebase 鉴权 Token 服务（登录换取/刷新 token）
       - DOMAIN,yt3.ggpht.com # YouTube 头像/频道图标 CDN（Google ggpht）
       - DOMAIN,jnn-pa.googleapis.com
       - DOMAIN,lh3.google.com
