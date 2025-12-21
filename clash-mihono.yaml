@@ -115,6 +115,7 @@ rule-providers:
       - DOMAIN-SUFFIX,googlevideo.com
       - DOMAIN-SUFFIX,gstatic.com
       - DOMAIN-SUFFIX,youtube.com
+      - DOMAIN,apis.google.com
 
   misc:
     type: inline
