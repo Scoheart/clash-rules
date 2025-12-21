@@ -76,25 +76,28 @@ rule-providers:
       - DOMAIN,aistudio.google.com
       - DOMAIN,alkalimakersuite-pa.clients6.google.com
       - DOMAIN,android.clients.google.com
+      - DOMAIN,apis.google.com
       - DOMAIN,calendar.google.com
+      - DOMAIN,chromemodelexecution-pa.googleapis.com
       - DOMAIN,clients1.google.com
       - DOMAIN,clients2.google.com
       - DOMAIN,clients4.google.com
       - DOMAIN,clientservices.googleapis.com
-      - DOMAIN,chromemodelexecution-pa.googleapis.com
       - DOMAIN,cloudcode-pa.googleapis.com
       - DOMAIN,content-autofill.googleapis.com
+      - DOMAIN,csp.withgoogle.com
       - DOMAIN,daily-cloudcode-pa.googleapis.com
       - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
       - DOMAIN,firebaselogging-pa.googleapis.com
       - DOMAIN,gemini.google.com # Gemini
       - DOMAIN,i.ytimg.com
+      - DOMAIN,identitytoolkit.googleapis.com
       - DOMAIN,jnn-pa.googleapis.com
       - DOMAIN,lh3.google.com
       - DOMAIN,lh3.googleusercontent.com
-      - DOMAIN,mtalk.google.com # Antigravity
       - DOMAIN,mail.google.com
       - DOMAIN,memex-pa.googleapis.com
+      - DOMAIN,mtalk.google.com # Antigravity
       - DOMAIN,oauth2.googleapis.com
       - DOMAIN,ogads-pa.clients6.google.com
       - DOMAIN,ogs.google.com
@@ -115,28 +118,29 @@ rule-providers:
       - DOMAIN-SUFFIX,googlevideo.com
       - DOMAIN-SUFFIX,gstatic.com
       - DOMAIN-SUFFIX,youtube.com
-      - DOMAIN,apis.google.com
 
   misc:
     type: inline
     behavior: classical
     payload:
+      - DOMAIN,alb.reddit.com
+      - DOMAIN,anyrouter.top
       - DOMAIN,app.warp.dev
       - DOMAIN,axios-http.com
+      - DOMAIN,babeljs.io
       - DOMAIN,cdn-avatars.huggingface.co
       - DOMAIN,cloud.dify.ai
+      - DOMAIN,developer.mozilla.org
       - DOMAIN,huggingface.co
       - DOMAIN,lmarena.ai
       - DOMAIN,m.stripe.com
       - DOMAIN,mcp.context7.com
       - DOMAIN,ollama.com
+      - DOMAIN,pixel-config.reddit.com
       - DOMAIN,registry.npmjs.org
       - DOMAIN,shadowsocks.org
       - DOMAIN,www.gravatar.com
-      - DOMAIN,developer.mozilla.org
       - DOMAIN,www.typescriptlang.org
-      - DOMAIN,babeljs.io
-      - DOMAIN,anyrouter.top
       - DOMAIN-SUFFIX,intellimizeio.com
 
   openai:
