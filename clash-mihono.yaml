@@ -186,6 +186,7 @@ rule-providers:
       - DOMAIN,grok.com
       - DOMAIN,ton.local.twitter.com
       - DOMAIN,x.com
+      - DOMAIN,x.ai
 
 rules:
   - RULE-SET,apple,USA-amazon
