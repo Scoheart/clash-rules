@@ -90,6 +90,7 @@ rule-providers:
       - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
       - DOMAIN,firebaselogging-pa.googleapis.com
       - DOMAIN,gemini.google.com # Gemini
+      - DOMAIN,generativelanguage.googleapis.com
       - DOMAIN,i.ytimg.com
       - DOMAIN,identitytoolkit.googleapis.com
       - DOMAIN,securetoken.googleapis.com # Google/Firebase 鉴权 Token 服务（登录换取/刷新 token）
