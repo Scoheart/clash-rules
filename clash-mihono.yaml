@@ -16,6 +16,7 @@ rule-providers:
     type: inline
     behavior: classical
     payload:
+      - DOMAIN,30-courier.push.apple.com
       - DOMAIN,gs-loc-cn.apple.com
       - DOMAIN,token.safebrowsing.apple
 
@@ -92,6 +93,8 @@ rule-providers:
       - DOMAIN,firebaselogging-pa.googleapis.com
       - DOMAIN,gemini.google.com # Gemini
       - DOMAIN,generativelanguage.googleapis.com
+      - DOMAIN,google.com
+      - DOMAIN,history.google.com
       - DOMAIN,i.ytimg.com
       - DOMAIN,identitytoolkit.googleapis.com
       - DOMAIN,securetoken.googleapis.com # Google/Firebase 鉴权 Token 服务（登录换取/刷新 token）
@@ -110,6 +113,7 @@ rule-providers:
       - DOMAIN,play.googleapis.com
       - DOMAIN,safebrowsing.google.com
       - DOMAIN,safebrowsing.googleapis.com # Antigravity
+      - DOMAIN,safebrowsingohttpgateway.googleapis.com
       - DOMAIN,signaler-pa.clients6.google.com # Antigravity
       - DOMAIN,translate.google.com
       - DOMAIN,update.googleapis.com
