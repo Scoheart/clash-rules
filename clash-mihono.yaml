@@ -140,6 +140,7 @@ rule-providers:
       - DOMAIN,m.stripe.com
       - DOMAIN,mcp.context7.com
       - DOMAIN,nexus-websocket-a.intercom.io
+      - DOMAIN,netdna.bootstrapcdn.com
       - DOMAIN,ollama.com
       - DOMAIN,o33249.ingest.us.sentry.io
       - DOMAIN,pixel-config.reddit.com
