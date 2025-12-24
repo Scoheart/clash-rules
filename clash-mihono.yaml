@@ -143,7 +143,9 @@ rule-providers:
       - DOMAIN,lmarena.ai
       - DOMAIN,m.stripe.com
       - DOMAIN,mcp.context7.com
+      - DOMAIN,nexus-websocket-a.intercom.io
       - DOMAIN,ollama.com
+      - DOMAIN,o33249.ingest.us.sentry.io
       - DOMAIN,pixel-config.reddit.com
       - DOMAIN,registry.npmjs.org
       - DOMAIN,shadowsocks.org
