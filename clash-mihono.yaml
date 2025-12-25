@@ -16,6 +16,7 @@ rule-providers:
     type: inline
     behavior: classical
     payload:
+      - DOMAIN,22-courier.push.apple.com
       - DOMAIN,30-courier.push.apple.com
       - DOMAIN,gs-loc-cn.apple.com
       - DOMAIN,token.safebrowsing.apple
