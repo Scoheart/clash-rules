@@ -160,6 +160,7 @@ rule-providers:
     payload:
       - DOMAIN,ab.chatgpt.com
       - DOMAIN,auth.openai.com
+      - DOMAIN,api.openai.com
       - DOMAIN,chatgpt.com
       - DOMAIN,ios.chat.openai.com
       - DOMAIN,platform.openai.com
