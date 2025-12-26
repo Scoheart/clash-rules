@@ -153,6 +153,7 @@ rule-providers:
       - DOMAIN,www.gravatar.com
       - DOMAIN,www.typescriptlang.org
       - DOMAIN-SUFFIX,intellimizeio.com
+      - DOMAIN,en.wikipedia.org
 
   openai:
     type: inline
