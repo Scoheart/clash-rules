@@ -138,6 +138,7 @@ rule-providers:
       - DOMAIN,alb.reddit.com
       - DOMAIN,anyrouter.top
       - DOMAIN,app.warp.dev
+      - DOMAIN,astral.sh
       - DOMAIN,axios-http.com
       - DOMAIN,babeljs.io
       - DOMAIN,cdn-avatars.huggingface.co
