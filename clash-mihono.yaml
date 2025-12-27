@@ -73,6 +73,7 @@ rule-providers:
     type: inline
     behavior: classical
     payload:
+      - DOMAIN,accountcapabilities-pa.googleapis.com # Google Account Capabilities
       - DOMAIN,accounts.google.com
       - DOMAIN,ai.google.dev
       - DOMAIN,aistudio.google.com
@@ -81,6 +82,7 @@ rule-providers:
       - DOMAIN,apis.google.com
       - DOMAIN,calendar.google.com
       - DOMAIN,chromemodelexecution-pa.googleapis.com
+      - DOMAIN,chromewebstore.googleapis.com # Chrome Web Store
       - DOMAIN,clients1.google.com
       - DOMAIN,clients2.google.com
       - DOMAIN,clients4.google.com
@@ -115,6 +117,7 @@ rule-providers:
       - DOMAIN,safebrowsing.googleapis.com # Antigravity
       - DOMAIN,safebrowsingohttpgateway.googleapis.com
       - DOMAIN,signaler-pa.clients6.google.com # Antigravity
+      - DOMAIN,storage.googleapis.com # Google Cloud Storage
       - DOMAIN,translate.google.com
       - DOMAIN,update.googleapis.com
       - DOMAIN,waa-pa.clients6.google.com
@@ -139,7 +142,9 @@ rule-providers:
       - DOMAIN,cdn-avatars.huggingface.co
       - DOMAIN,cloud.dify.ai
       - DOMAIN,developer.mozilla.org
+      - DOMAIN,en.wikipedia.org # Wikipedia
       - DOMAIN,huggingface.co
+      - DOMAIN,kazupon.github.io # Vue I18n
       - DOMAIN,lmarena.ai
       - DOMAIN,m.stripe.com
       - DOMAIN,mcp.context7.com
@@ -147,13 +152,13 @@ rule-providers:
       - DOMAIN,netdna.bootstrapcdn.com
       - DOMAIN,ollama.com
       - DOMAIN,o33249.ingest.us.sentry.io
+      - DOMAIN,o540343.ingest.sentry.io # Sentry Ingest
       - DOMAIN,pixel-config.reddit.com
       - DOMAIN,registry.npmjs.org
       - DOMAIN,shadowsocks.org
       - DOMAIN,www.gravatar.com
       - DOMAIN,www.typescriptlang.org
       - DOMAIN-SUFFIX,intellimizeio.com
-      - DOMAIN,en.wikipedia.org
 
   openai:
     type: inline
