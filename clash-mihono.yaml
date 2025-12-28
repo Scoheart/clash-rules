@@ -162,6 +162,7 @@ rule-providers:
       - DOMAIN,www.typescriptlang.org
       - DOMAIN-SUFFIX,intellimizeio.com
       - DOMAIN,arai-a.github.io
+      - DOMAIN,compat-table.github.io
 
   openai:
     type: inline
