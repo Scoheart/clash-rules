@@ -122,6 +122,7 @@ rule-providers:
       - DOMAIN,translate.google.com
       - DOMAIN,update.googleapis.com
       - DOMAIN,waa-pa.clients6.google.com
+      - DOMAIN,www.google-analytics.com
       - DOMAIN,www.google.com # Google
       - DOMAIN,www.googleapis.com # Antigravity
       - DOMAIN,www.gstatic.com
