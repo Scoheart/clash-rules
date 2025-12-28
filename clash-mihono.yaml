@@ -137,32 +137,33 @@ rule-providers:
     payload:
       - DOMAIN,alb.reddit.com
       - DOMAIN,anyrouter.top
-      - DOMAIN,app.warp.dev
-      - DOMAIN,astral.sh
-      - DOMAIN,axios-http.com
-      - DOMAIN,babeljs.io
+      - DOMAIN,app.warp.dev # Warp Terminal
+      - DOMAIN,arai-a.github.io
+      - DOMAIN,astral.sh # Ruff
+      - DOMAIN,axios-http.com # Axios
+      - DOMAIN,babeljs.io # Babel
       - DOMAIN,cdn-avatars.huggingface.co
-      - DOMAIN,cloud.dify.ai
-      - DOMAIN,developer.mozilla.org
+      - DOMAIN,cloud.dify.ai # Dify
+      - DOMAIN,compat-table.github.io # ES Compat Table
+      - DOMAIN,developer.mozilla.org # MDN
       - DOMAIN,en.wikipedia.org # Wikipedia
-      - DOMAIN,huggingface.co
+      - DOMAIN,huggingface.co # Hugging Face
       - DOMAIN,kazupon.github.io # Vue I18n
-      - DOMAIN,lmarena.ai
-      - DOMAIN,m.stripe.com
+      - DOMAIN,lmarena.ai # Chatbot Arena
+      - DOMAIN,m.stripe.com # Stripe
       - DOMAIN,mcp.context7.com
-      - DOMAIN,nexus-websocket-a.intercom.io
       - DOMAIN,netdna.bootstrapcdn.com
-      - DOMAIN,ollama.com
+      - DOMAIN,nexus-websocket-a.intercom.io
       - DOMAIN,o33249.ingest.us.sentry.io
       - DOMAIN,o540343.ingest.sentry.io # Sentry Ingest
+      - DOMAIN,ollama.com # Ollama
       - DOMAIN,pixel-config.reddit.com
-      - DOMAIN,registry.npmjs.org
-      - DOMAIN,shadowsocks.org
-      - DOMAIN,www.gravatar.com
-      - DOMAIN,www.typescriptlang.org
+      - DOMAIN,registry.npmjs.org # NPM Registry
+      - DOMAIN,shadowsocks.org # Shadowsocks
+      - DOMAIN,tc39.es # ECMA TC39
+      - DOMAIN,www.gravatar.com # Gravatar
+      - DOMAIN,www.typescriptlang.org # TypeScript
       - DOMAIN-SUFFIX,intellimizeio.com
-      - DOMAIN,arai-a.github.io
-      - DOMAIN,compat-table.github.io
 
   openai:
     type: inline
