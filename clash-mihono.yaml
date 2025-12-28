@@ -161,6 +161,7 @@ rule-providers:
       - DOMAIN,www.gravatar.com
       - DOMAIN,www.typescriptlang.org
       - DOMAIN-SUFFIX,intellimizeio.com
+      - DOMAIN,arai-a.github.io
 
   openai:
     type: inline
