@@ -82,6 +82,7 @@ rule-providers:
       - DOMAIN,alkalimakersuite-pa.clients6.google.com
       - DOMAIN,android.clients.google.com
       - DOMAIN,antigravity.google
+      - DOMAIN,antigravity-unleash.goog # Antigravity Unleash
       - DOMAIN,apis.google.com
       - DOMAIN,calendar.google.com
       - DOMAIN,chromemodelexecution-pa.googleapis.com
@@ -102,6 +103,7 @@ rule-providers:
       - DOMAIN,google.com
       - DOMAIN,history.google.com
       - DOMAIN,i.ytimg.com
+      - DOMAIN,imap.gmail.com # Gmail IMAP
       - DOMAIN,identitytoolkit.googleapis.com
       - DOMAIN,securetoken.googleapis.com # Google/Firebase 鉴权 Token 服务（登录换取/刷新 token）
       - DOMAIN,yt3.ggpht.com # YouTube 头像/频道图标 CDN（Google ggpht）
