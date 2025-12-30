@@ -75,11 +75,13 @@ rule-providers:
     behavior: classical
     payload:
       - DOMAIN,accountcapabilities-pa.googleapis.com # Google Account Capabilities
+      - DOMAIN,accounts.doubleclick.net
       - DOMAIN,accounts.google.com
       - DOMAIN,ai.google.dev
       - DOMAIN,aistudio.google.com
       - DOMAIN,alkalimakersuite-pa.clients6.google.com
       - DOMAIN,android.clients.google.com
+      - DOMAIN,antigravity.google
       - DOMAIN,apis.google.com
       - DOMAIN,calendar.google.com
       - DOMAIN,chromemodelexecution-pa.googleapis.com
@@ -93,6 +95,7 @@ rule-providers:
       - DOMAIN,csp.withgoogle.com
       - DOMAIN,daily-cloudcode-pa.googleapis.com
       - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
+      - DOMAIN,docs.google.com
       - DOMAIN,firebaselogging-pa.googleapis.com
       - DOMAIN,gemini.google.com # Gemini
       - DOMAIN,generativelanguage.googleapis.com
