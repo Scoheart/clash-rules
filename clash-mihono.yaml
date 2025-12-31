@@ -9,7 +9,7 @@ proxies:
     port: 8488
     cipher: chacha20-ietf-poly1305
     password: 8888
-    udp: false
+    udp: true
 
 rule-providers:
   apple:
