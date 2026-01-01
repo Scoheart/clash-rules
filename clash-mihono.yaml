@@ -96,6 +96,7 @@ rule-providers:
       - DOMAIN,csp.withgoogle.com
       - DOMAIN,daily-cloudcode-pa.googleapis.com
       - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com # Antigravity
+      - DOMAIN,developers.google.com # Google Developers
       - DOMAIN,docs.google.com
       - DOMAIN,firebaselogging-pa.googleapis.com
       - DOMAIN,gemini.google.com # Gemini
