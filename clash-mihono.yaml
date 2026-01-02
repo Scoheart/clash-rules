@@ -169,6 +169,7 @@ rule-providers:
       - DOMAIN,registry.npmjs.org # NPM Registry
       - DOMAIN,shadowsocks.org # Shadowsocks
       - DOMAIN,tc39.es # ECMA TC39
+      - DOMAIN,wiki.metacubex.one # Metacubex Wiki
       - DOMAIN,www.gravatar.com # Gravatar
       - DOMAIN,www.typescriptlang.org # TypeScript
       - DOMAIN-SUFFIX,intellimizeio.com
@@ -229,4 +230,6 @@ rules:
   - RULE-SET,openai,USA-amazon
   - RULE-SET,telegram,USA-amazon
   - RULE-SET,x,USA-amazon
+  - GEOSITE,cn,DIRECT
+  - GEOIP,cn,DIRECT
   - MATCH,DIRECT
