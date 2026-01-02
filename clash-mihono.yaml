@@ -67,6 +67,7 @@ rule-providers:
     type: inline
     behavior: classical
     payload:
+      - DOMAIN,alive.github.com
       - DOMAIN,github.com
       - DOMAIN,raw.githubusercontent.com
 
@@ -148,11 +149,14 @@ rule-providers:
       - DOMAIN,agentcmds.work
       - DOMAIN,alb.reddit.com
       - DOMAIN,anyrouter.top
+      - DOMAIN,api.wakatime.com # WakaTime
+      - DOMAIN,api.zed.dev # Zed
       - DOMAIN,app.warp.dev # Warp Terminal
       - DOMAIN,arai-a.github.io
       - DOMAIN,astral.sh # Ruff
       - DOMAIN,axios-http.com # Axios
       - DOMAIN,babeljs.io # Babel
+      - DOMAIN,browser.events.data.microsoft.com # Microsoft
       - DOMAIN,cdn-avatars.huggingface.co
       - DOMAIN,cloud.dify.ai # Dify
       - DOMAIN,compat-table.github.io # ES Compat Table

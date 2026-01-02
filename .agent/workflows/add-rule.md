@@ -17,7 +17,7 @@ description: Add a new rule to clash-mihono.yaml and shadowrocket.conf in alphab
 
 4. **Update `clash-mihono.yaml`**:
    - use `replace_file_content` or `multi_replace_file_content` to insert the new rule.
-   - Format: `      - DOMAIN,domain.com # Comment`
+   - Format: `- DOMAIN,domain.com # Comment`
 
 5. **Update `shadowrocket.conf`**:
    - use `replace_file_content` or `multi_replace_file_content` to insert the new rule.
