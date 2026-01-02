@@ -19,6 +19,7 @@ rule-providers:
       - DOMAIN,22-courier.push.apple.com
       - DOMAIN,30-courier.push.apple.com
       - DOMAIN,gs-loc-cn.apple.com
+      - DOMAIN,stocks-data-service.apple.com
       - DOMAIN,token.safebrowsing.apple
 
   claude:
@@ -82,7 +83,9 @@ rule-providers:
       - DOMAIN,ai.google.dev
       - DOMAIN,aistudio.google.com
       - DOMAIN,alkalimakersuite-pa.clients6.google.com
+      - DOMAIN,analytics.google.com
       - DOMAIN,android.clients.google.com
+      - DOMAIN,antigravity-auto-updater-974169037036.us-central1.run.app
       - DOMAIN,antigravity.google # Antigravity
       - DOMAIN,antigravity-unleash.goog # Antigravity Unleash
       - DOMAIN,apis.google.com
@@ -173,8 +176,10 @@ rule-providers:
       - DOMAIN,o33249.ingest.us.sentry.io
       - DOMAIN,o540343.ingest.sentry.io # Sentry Ingest
       - DOMAIN,ollama.com # Ollama
+      - DOMAIN,open-vsx.org
       - DOMAIN,pixel-config.reddit.com
       - DOMAIN,registry.npmjs.org # NPM Registry
+      - DOMAIN,registry.ollama.ai
       - DOMAIN,shadowsocks.org # Shadowsocks
       - DOMAIN,tc39.es # ECMA TC39
       - DOMAIN,wiki.metacubex.one # Metacubex Wiki
