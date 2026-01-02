@@ -70,6 +70,7 @@ rule-providers:
       - DOMAIN,alive.github.com
       - DOMAIN,github.com
       - DOMAIN,raw.githubusercontent.com
+      - DOMAIN,ssh.github.com
 
   google:
     type: inline
