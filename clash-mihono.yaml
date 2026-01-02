@@ -92,6 +92,7 @@ rule-providers:
       - DOMAIN,clients4.google.com
       - DOMAIN,clientservices.googleapis.com
       - DOMAIN,cloudcode-pa.googleapis.com
+      - DOMAIN,connectivitycheck.gstatic.com
       - DOMAIN,content-autofill.googleapis.com
       - DOMAIN,csp.withgoogle.com
       - DOMAIN,daily-cloudcode-pa.googleapis.com
@@ -114,6 +115,7 @@ rule-providers:
       - DOMAIN,mail.google.com
       - DOMAIN,memex-pa.googleapis.com
       - DOMAIN,mtalk.google.com # Antigravity
+      - DOMAIN,myaccount.google.com
       - DOMAIN,oauth2.googleapis.com
       - DOMAIN,ogads-pa.clients6.google.com
       - DOMAIN,ogs.google.com
@@ -143,6 +145,7 @@ rule-providers:
     type: inline
     behavior: classical
     payload:
+      - DOMAIN,agentcmds.work
       - DOMAIN,alb.reddit.com
       - DOMAIN,anyrouter.top
       - DOMAIN,app.warp.dev # Warp Terminal
