@@ -5,7 +5,7 @@ port: 7897
 proxies:
   - name: USA-amazon
     type: ss
-    server: 54.188.20.137
+    server: 44.250.100.222
     port: 8488
     cipher: chacha20-ietf-poly1305
     password: 8888
