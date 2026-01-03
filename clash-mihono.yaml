@@ -186,6 +186,7 @@ rule-providers:
       - DOMAIN,pixel-config.reddit.com
       - DOMAIN,registry.npmjs.org # NPM Registry
       - DOMAIN,registry.ollama.ai
+      - DOMAIN,scoheart.netlify.app
       - DOMAIN,shadowsocks.org # Shadowsocks
       - DOMAIN,tc39.es # ECMA TC39
       - DOMAIN,wiki.metacubex.one # Metacubex Wiki
