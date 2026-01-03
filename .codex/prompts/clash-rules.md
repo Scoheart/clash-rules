@@ -1,0 +1,27 @@
+---
+description: Add a new rule to clash-mihono.yaml and shadowrocket.conf
+---
+
+Add a new rule to @clash-mihono.yaml and @shadowrocket.conf in alphabetical order with a comment.
+
+1. **Analyze the Request**:
+   - Extract the **domain(s)** and any associated **comment** from the user's request.
+   - Determine the appropriate **target group** (e.g., `google`, `misc`, `openai`) based on the domain pattern or specific instructions.
+
+2. **Inspect Configuration Files**:
+   - Read @clash-mihono.yaml to locate the relevant `rule-providers` section and existing rules.
+   - Read @shadowrocket.conf to identify the `[Rule]` section and proxy group context.
+
+3. **Determine Insertion Points**:
+   - **@clash-mihono.yaml**: Identify the precise alphabetical position within the target group's `payload` list.
+   - **@shadowrocket.conf**: Identify the precise alphabetical position within the corresponding group block in the `[Rule]` section.
+
+4. **Apply Changes**:
+   - **Update @clash-mihono.yaml**: Insert the new rule.
+     - **Format**: `      - DOMAIN,domain.com # Comment` (Ensure correct indentation).
+   - **Update @shadowrocket.conf**: Insert the new rule.
+     - **Format**: `DOMAIN,domain.com,USA-amazon # Comment` (Ensure the proxy group matches existing entries).
+
+5. **Verification**:
+   - Review the changes to ensure correct formatting, indentation, and strict alphabetical ordering.
+   - Confirm that the changes are synchronized across both configuration files.
