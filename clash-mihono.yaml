@@ -243,6 +243,7 @@ rules:
   - RULE-SET,cursor,USA-amazon
   - RULE-SET,discord,USA-amazon
   - RULE-SET,docker,USA-amazon
+  - RULE-SET,facebook,USA-amazon
   - RULE-SET,github,USA-amazon
   - RULE-SET,google,USA-amazon
   - RULE-SET,misc,USA-amazon
