@@ -172,6 +172,7 @@ rule-providers:
       - DOMAIN,compat-table.github.io # ES Compat Table
       - DOMAIN,developer.mozilla.org # MDN
       - DOMAIN,en.wikipedia.org # Wikipedia
+      - DOMAIN,florevia.netlify.app
       - DOMAIN,huggingface.co # Hugging Face
       - DOMAIN,kazupon.github.io # Vue I18n
       - DOMAIN,lmarena.ai # Chatbot Arena
