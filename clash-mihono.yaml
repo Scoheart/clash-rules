@@ -64,6 +64,12 @@ rule-providers:
       - DOMAIN,registry-1.docker.io
       - DOMAIN,www.docker.com
 
+  facebook:
+    type: inline
+    behavior: classical
+    payload:
+      - DOMAIN,www.facebook.com # Facebook
+
   github:
     type: inline
     behavior: classical
